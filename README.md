@@ -6,11 +6,12 @@ This app would normally be deployed as result of one single "docker-compose up" 
 3) Front end for such microservice
 
 Now, the list of steps carried out over Railway platform are listed:
+
 0. Visit docs page: https://docs.railway.com/overview/about-railway
 Railway is a deployment platform designed to streamline the software development life-cycle, starting with instant deployments and effortless scale, extending to CI/CD integrations and built-in observability.
 1. Go to https://railway.app/dashboard
 2. Log in with your GitHub credentials
-3) In the dashboard https://railway.app/dashboard
+3. In the dashboard https://railway.app/dashboard
     a. Hit New and then select "empty project"
     b. Give the project a name, e.g. "QuoteMicroserviceApp" as I have done
     c. Within the project created, e.g. in my case https://railway.app/project/3cea3616-2b00-4d7c-9bf5-51263d4bdc9d, click on top right hand side button "+Create"
