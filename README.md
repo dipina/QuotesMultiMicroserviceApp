@@ -14,9 +14,13 @@ Railway is a deployment platform designed to streamline the software development
 3. In the dashboard https://railway.app/dashboard:
    
     a. Hit New and then select "empty project"
+   
     b. Give the project a name, e.g. "QuoteMicroserviceApp" as I have done
+   
     c. Within the project created, e.g. in my case https://railway.app/project/3cea3616-2b00-4d7c-9bf5-51263d4bdc9d, click on top right hand side button "+Create"
+   
     d. Select GitHub repo and paste there the URL of the source code repo having a Dockerfile which you want to deploy as a service.
+   
         * I have done this with the contents of the following three public repositories:
             * https://github.com/dipina/QuoteFrontEnd
             * https://github.com/dipina/APIGateway-railways
@@ -29,14 +33,18 @@ Railway is a deployment platform designed to streamline the software development
         * Go to the project page and select "Settings" on the top right hand side
         * Then, click on "Shared variables"
         * Define QUOTES_API_GATEWAY with value https://quoteservice-railways-production.up.railway.app/
+   
     b. Click on "Architecture" at the top part and select "APIGateway-railways"
+   
     c. Click on "Variables" within the service
+   
     d. Click on "Shared variable" and ADD to this Service the ENVIRONMENT VARIABLE for the project named QUOTES_API
    
 7. Notice that the URL of the API Gateway is hardcoded within file src/script.js of QuoteFrontEnd.
     a. Now is set up to const API_GATEWAY = "https://apigateway-railways-production.up.railway.app";
+   
     b. You should update the value with the public DNS name for the APP Gateway
 
-8. You should now be able to access the app consisting of 3 microservices fully deployed in the Cloud: https://quotefrontend-production.up.railway.app/
+9. You should now be able to access the app consisting of 3 microservices fully deployed in the Cloud: https://quotefrontend-production.up.railway.app/
 
 
