@@ -1,0 +1,23 @@
+version: '2'
+services:
+  quotes:
+    build:
+      context: ./QuoteService-railways
+      dockerfile: Dockerfile
+  api:
+    build:
+      context: ./ApiGateway-railways
+      dockerfile: Dockerfile
+    environment:
+      - "QUOTES_API=http://quotes:5000"
+    depends_on:
+      - quotes
+    ports:
+      - "3000:3000"
+  frontend:
+    build:
+      context: ./QuoteFrontEnd
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    
