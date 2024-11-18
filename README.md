@@ -5,7 +5,7 @@ This app would normally be deployed as result of one single "docker-compose up" 
 2) Quote microservice which based on a quotes.txt provides quotes from famous people on demand
 3) Front end for such microservice
 
-Now, the list of steps carried out over Railway platform are listed:
+Now, the list of steps carried out to deploy this app over Railway platform are:
 
 0. Visit docs page: https://docs.railway.com/overview/about-railway
 Railway is a deployment platform designed to streamline the software development life-cycle, starting with instant deployments and effortless scale, extending to CI/CD integrations and built-in observability.
