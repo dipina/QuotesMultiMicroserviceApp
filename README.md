@@ -29,9 +29,9 @@ Railway is a deployment platform designed to streamline the software development
 5. As result you will have created 3 microservices with the Railway project which are accessible via HTTP. Those services may share ENVIRONMENT VARIABLES among them.
    
     a. For our microservices we have to inform the API Gateway microservice of the public domain where QuoteService-railways has been deployed. For that, we define some SHARED VARIABLES for all the microservices, with the project settings.
-        * Go to the project page and select "Settings" on the top right hand side
-        * Then, click on "Shared variables"
-        * Define QUOTES_API_GATEWAY with value https://quoteservice-railways-production.up.railway.app/
+        - Go to the project page and select "Settings" on the top right hand side
+        - Then, click on "Shared variables"
+        - Define QUOTES_API_GATEWAY with value https://quoteservice-railways-production.up.railway.app/
    
     b. Click on "Architecture" at the top part and select "APIGateway-railways"
    
