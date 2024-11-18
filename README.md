@@ -20,12 +20,11 @@ Railway is a deployment platform designed to streamline the software development
     c. Within the project created, e.g. in my case https://railway.app/project/3cea3616-2b00-4d7c-9bf5-51263d4bdc9d, click on top right hand side button "+Create"
    
     d. Select GitHub repo and paste there the URL of the source code repo having a Dockerfile which you want to deploy as a service.
-   
-        * I have done this with the contents of the following three public repositories:
-            * https://github.com/dipina/QuoteFrontEnd
-            * https://github.com/dipina/APIGateway-railways
-            * https://github.com/dipina/QuoteService-railways
-        * IMPORTANT.For each microservice, within the "Setting tab" search for "domain" and click on option to add public domain within "Public Networking" in order to access your application over HTTP
+      - I have done this with the contents of the following three public repositories:
+         - https://github.com/dipina/QuoteFrontEnd
+         - https://github.com/dipina/APIGateway-railways
+         - https://github.com/dipina/QuoteService-railways
+      - IMPORTANT.For each microservice, within the "Setting tab" search for "domain" and click on option to add public domain within "Public Networking" in order to access your application over HTTP
 
 5. As result you will have created 3 microservices with the Railway project which are accessible via HTTP. Those services may share ENVIRONMENT VARIABLES among them.
    
